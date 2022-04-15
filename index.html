@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica</title>
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">Clinica</h1>
+        <ul class="nav-links">
+            <li class="active"><a href=""></a>Inicio</li>
+            <li><a href=""></a>Servicios</li>
+            <li><a href=""></a>Staff</li>
+            <li><a href=""></a>Contactanos</li>
+        </ul>
+        <img class="menu-btn" src="./img/menu.png" alt="">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Clinica - Medical</h2>
+            <div class="line"></div>
+            <h1>Landing Page</h1>
+            <a href="#" class="ctn">Leer más</a>
+        </div>
+    </header>
+
+    <section class="event">
+        <div class="title">
+            <h1>Servicios</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="./img/cardiologia.jpg" alt="">
+                <h4>Cardiologia</h4>
+            </div>
+
+            <div class="col">
+                <img src="./img/cardiologia.jpg" alt="">
+                <h4>Cardiologia</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/cardiologia.jpg" alt="">
+                <h4>Cardiologia</h4>
+            </div>
+
+            <div class="col">
+                <img src="./img/cardiologia.jpg" alt="">
+                <h4>Cardiologia</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="telemedicine">
+        <div class="telemedicine-content">
+            <h3>TELEMEDICINA</h3>
+            <p>Contamos con el servicio de consultas especializadas de manera remota,
+                esto con el fin de poder atender a nuestros pacientes desde cualquier lugar.
+            </p>
+            <h4 class="ctn">Contactanos</h4>
+        </div>
+    </section>
+
+    <section class="staff">
+            <div class="row-staff">
+                <div class="col-content">
+                    <h3>Staff Médico</h3>
+                    <p>Conoce a nuestro staff de médicos especialistas con los que contamos para brindarle una excelente atención que usted merece.</p>
+                </div>
+
+                <div class="col-image">
+                    
+                    <div class="staff-image">                       
+                        
+                            <img src="img/staff.jpg" alt="">
+                            
+                            <img src="img/staff.jpg" alt="">
+                        
+                            <img src="img/staff.jpg" alt="">
+                        
+                            <img src="img/staff.jpg" alt="">
+
+                            <img src="img/staff.jpg" alt="">
+                        
+                            <img src="img/staff.jpg" alt="">
+                        
+                    </div>
+                        
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="row-footer">
+                <div class="box">
+                    <figure>
+                        <img class="logo-footer" src="/img/logo.png" alt="">
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>ACERCA DE NOSOTROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora libero blanditiis rem ipsum asperiores quae rerum nisi. 
+                    Aperiam esse molestiae rem delectus autem ad optio voluptas eius earum accusamus.</p>
+                </div>
+                <div class="box">
+                    <a class="link-social" href="www.facebook.com"><img class="icon-social" src="/img/fb.png" alt=""></a>
+                    <a href="www.google.com"><img class="icon-social" src="/img/wa.png" alt=""></a>
+                    <a href="www.google.com"><img class="icon-social" src="/img/ig.png" alt=""></a>
+                </div>
+            </div>
+            <div class="line-footer"></div>
+            <div class="row-autor">
+                <p> &copy; Copyright 2022 - Luis Ore Cardenas | Todos los Derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click', ()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
