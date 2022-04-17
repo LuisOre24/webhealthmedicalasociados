@@ -9,29 +9,30 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar bgcolor">
         <h1 class="logo">Clinica</h1>
         <ul class="nav-links">
-            <li class="active"><a href=""></a>Inicio</li>
-            <li><a href=""></a>Servicios</li>
-            <li><a href=""></a>Staff</li>
-            <li><a href=""></a>Contactanos</li>
+            <li class="active"><a href="#home">INICIO</a></li>
+            <li><a href="#service">SERVICIOS</a></li>
+            <li><a href="#telemedicine">TELEMEDICINA</a></li>
+            <li><a href="#staff">STAFF</a></li>
+            <li><a href="#contact">CONTACTANOS</a></li>
         </ul>
         <img class="menu-btn" src="./img/menu.png" alt="">
     </nav>
 
-    <header>
+    <header id="home">
         <div class="header-content">
             <h2>Clinica - Medical</h2>
             <div class="line"></div>
             <h1>Landing Page</h1>
-            <a href="#" class="ctn">Leer más</a>
+            <a href="#service" class="ctn">CONOCENOS</a>
         </div>
     </header>
 
-    <section class="event">
+    <section id="service" class="event">
         <div class="title">
-            <h1>Servicios</h1>
+            <h1>SERVICIOS</h1>
             <div class="line"></div>
         </div>
 
@@ -60,9 +61,9 @@
 
     </section>
 
-    <section class="telemedicine">
-        <div class="telemedicine-content">
-            <h3>TELEMEDICINA</h3>
+    <section id="telemedicine" class="telemedicine">
+        <div class="title telemedicine-content">
+            <h1>TELEMEDICINA</h1>
             <p>Contamos con el servicio de consultas especializadas de manera remota,
                 esto con el fin de poder atender a nuestros pacientes desde cualquier lugar.
             </p>
@@ -70,10 +71,11 @@
         </div>
     </section>
 
-    <section class="staff">
+    <section id="staff" class="staff">
             <div class="row-staff">
-                <div class="col-content">
-                    <h3>Staff Médico</h3>
+                <div class="title col-content">
+                    <h1>STAFF MÉDICO</h1>
+                    <div class="line"></div>
                     <p>Conoce a nuestro staff de médicos especialistas con los que contamos para brindarle una excelente atención que usted merece.</p>
                 </div>
 
@@ -99,7 +101,42 @@
             </div>
     </section>
 
-    <footer>
+    <section id="contact" class="contact">
+        <div class="title contact-title">
+             <h1>CONTACTANOS</h1>
+        </div>
+        <div class="contact-content">
+            <div class="direction">
+                <img src="" alt="">
+                <p>Número de Celular: +51 999-212-111</p>
+                <img src="" alt="">
+                <p>Correo Electrónico: contactus@email.com</p>
+            </div>
+            <div class="schedule">
+                <h2>Horarios de Atención</h2>
+                <img src="" alt="">
+                <p>Lunes a Sábado de 7am - 7pm</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="partner" class="section-partner">
+        <div class="partner">
+            <div class="title partner-title">
+                <h1>NUESTROS ALIADOS</h1>
+                <div class="line"></div>
+            </div>
+            <div class="partner-logo">
+                <img src="./img/logo-maison.jpg" alt="">
+                <img src="./img/logo-chorrisalud.jpg" alt="">
+                <img src="./img/logo-sisol.png" alt="">
+                <img src="./img/logo-surcosalud.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
         <div class="footer">
             <div class="row-footer">
                 <div class="box">
@@ -129,10 +166,15 @@
     <script>
         const menuBtn = document.querySelector('.menu-btn')
         const navlinks = document.querySelector('.nav-links')
+        const url = document.querySelector('ul')
 
         menuBtn.addEventListener('click', ()=>{
-            navlinks.classList.toggle('mobile-menu')
-        })
+            navlinks.classList.toggle('mobile-menu');
+        });
+        url.addEventListener('click', ()=>{
+            navlinks.classList.toggle('mobile-menu');
+        });
+        
     </script>
 </body>
 </html>
